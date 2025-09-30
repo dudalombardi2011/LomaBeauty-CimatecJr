@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <script src="src/javascript/script.js" defer></script>
+    <title>Loma Beauty</title>
+</head>
+<body>
+    <header>
+        <div class="pagina-principal" id="header-carrossel">
+            <nav id="navbar">
+                <ul class="nav-desktop" id="nav-desktop">
+                    <li class="nav-item active">
+                        <a href="#navbar">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#produtos">Produtos</a>
+                    </li>
+                </ul>
+                <div class="mobile-menu" id="mobile-menu">
+                    <button class="close" id="closebutton">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="nav-mobile">
+                        <li class="nav-item active">
+                        <a href="#navbar">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/lomabeauty_?igsh=NWxoZzR5czY3MjVr&utm_source=qr">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="hamburguer" id="hamburguer-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+         </nav>
+         <div class="conteudo-header">
+            <p>REALCE SUA BELEZA NATURAL COM</p>
+            <h1>LOMA BEAUTY</h1>
+            <a class="botao" href="https://www.instagram.com/lomabeauty_?igsh=NWxoZzR5czY3MjVr&utm_source=qr">
+                <img class="logo-instagram" src="./src/imagens/instagram.png" alt="logo instagram">
+                Instagram
+            </a>
+
+         </div>
+        </div>
+    </header>
+    <main>
+        <div class="quadrados">
+            <div class="quadrado claro">
+                <h2>50% OFF</h2>
+                <p>NA PRIMEIRA COMPRA</p>
+                <a href="#" class="botao-compre1">Comprar agora</a>
+            </div>
+            <div class="quadrado escuro">
+                <h2>GIFTBOX</h2>
+                <p>Preços Especiais para você!</p>
+                <a href="#" class="botao-compre2">Comprar agora</a>
+            </div>
+        </div>
+        <div class="produtos">
+            <h2 id="produtos">nossos favoritos:</h2>
+            <div class="galeria-produtos">
+                <div class="produto-card">
+                    <button class="open-modal" data-modal="modal-1"><img src="src/imagens/base.png" alt="base loma beauty"></button>
+                    <dialog id="modal-1">
+                        <div class="modal-header">
+                            <img src="src/imagens/base.png" alt="base loma beauty">
+                            <div class="modal-conteudo">
+                                <h3>Base Luminous Skin</h3>
+                                <p>Preço: R$98,50</p>
+                                <a href="#" class="carrinho">
+                                    <img src="src/imagens/Shopping cart.png" alt="carrinho de compras">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                            <button class="close-modal" data-modal="modal-1">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </dialog>
+                    <h3>Base líquida</h3>
+                    <h4>Base Luminous Skin</h4>
+                </div>
+                <div class="produto-card">
+                    <button class="open-modal" data-modal="modal-2"><img src="src/imagens/batom liquido.png" alt="batom liquido loma beauty"></button>
+                    <dialog id="modal-2">
+                        <div class="modal-header">
+                            <img src="src/imagens/batom liquido.png" alt="batom liquido loma beauty">
+                            <div class="modal-conteudo">
+                                <h3>Batom Líquido Velvet Kiss</h3>
+                                <p>Preço: R$25,99</p>
+                                <a href="#" class="carrinho">
+                                    <img src="src/imagens/Shopping cart.png" alt="carrinho de compras">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                            <button class="close-modal" data-modal="modal-2">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </dialog>
+                    <h3>Batom Líquido</h3>
+                    <h4>Batom Líquido Velvet Kiss</h4>
+                </div>
+                <div class="produto-card">
+                    <button class="open-modal" data-modal="modal-3"><img src="src/imagens/sombra.png" alt="sombra loma beauty"></button>
+                    <dialog id="modal-3">
+                        <div class="modal-header">
+                            <img src="src/imagens/sombra.png" alt="sombra loma beauty">
+                            <div class="modal-conteudo">
+                                <h3>Paleta de Sombras Sunset Glow</h3>
+                                <p>Preço: R$120,50</p>
+                                <a href="#" class="carrinho">
+                                    <img src="src/imagens/Shopping cart.png" alt="carrinho de compras">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                            <button class="close-modal" data-modal="modal-3">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </dialog>
+                    <h3>Paleta de Sombras</h3>
+                    <h4>Paleta de Sombras Sunset Glow</h4>
+                </div>
+                <div class="produto-card">
+                    <button class="open-modal" data-modal="modal-4"><img src="src/imagens/blush.png" alt="blush loma beauty"></button>
+                    <dialog id="modal-4">
+                        <div class="modal-header">
+                            <img src="src/imagens/blush.png" alt="blush loma beauty">
+                            <div class="modal-conteudo">
+                                <h3>Blush Compacto Rosy Cheeks</h3>
+                                <p>Preço: R$59,99</p>
+                                <a href="#" class="carrinho">
+                                    <img src="src/imagens/Shopping cart.png" alt="carrinho de compras">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                            <button class="close-modal" data-modal="modal-4">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </dialog>
+                    <h3>Blush Compacto</h3>
+                    <h4>Blush Compacto Rosy Cheeks</h4>
+                </div>
+                <div class="produto-card">
+                    <button class="open-modal" data-modal="modal-5"><img src="src/imagens/glow serum.png" alt="serum loma beauty"></button>
+                    <dialog id="modal-5">
+                        <div class="modal-header">
+                            <img src="src/imagens/glow serum.png" alt="serum loma beauty">
+                            <div class="modal-conteudo">
+                                <h3>Glow Serum</h3>
+                                <p>Preço: R$35,70</p>
+                                <a href="#" class="carrinho">
+                                    <img src="src/imagens/Shopping cart.png" alt="carrinho de compras">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                            <button class="close-modal" data-modal="modal-5">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </dialog>
+                    <h3>Serum</h3>
+                    <h4>Glow Serum</h4>
+                </div>
+                <div class="produto-card">
+                    <button class="open-modal" data-modal="modal-6"> <img src="src/imagens/Loma Beauty Velvet Matte Lipstick.png" alt="batom matte loma beauty"></button>
+                    <dialog id="modal-6">
+                        <div class="modal-header">
+                            <img src="src/imagens/Loma Beauty Velvet Matte Lipstick.png" alt="batom matte loma beauty">
+                            <div class="modal-conteudo">
+                                <h3>Batom Matte Velvet Matte Lipstick</h3>
+                                <p>Preço: R$45,90</p>
+                                <a href="#" class="carrinho">
+                                    <img src="src/imagens/Shopping cart.png" alt="carrinho de compras">
+                                    Adicionar ao carrinho
+                                </a>
+                            </div>
+                            <button class="close-modal" data-modal="modal-6">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </dialog>
+                    <h3>Batom Matte</h3>
+                    <h4>Batom Matte Velvet Matte Lipstick</h4>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="lançamento">Futuros Lançamentos...</h1>
+        <!--começo do carrossel-->
+        <div class="slider">
+            <div class="slides">
+                <!--Bolinhas do carrossel-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <!--imagens do carrossel-->
+                <div class="slide first">
+                    <img src="src/imagens/lançamento 1.png" alt="lançamento 1">
+                </div>
+                <div class="slide">
+                    <img src="src/imagens/lançamento 2.png" alt="lançamento 2">
+                </div>
+                <div class="slide">
+                    <img src="src/imagens/lançamento 3.png" alt="lançamento 3">
+                </div>
+                
+                <!--bolinhas de navegacao-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+            </div>
+
+            <!--label de cada botao-->
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </main>
+        <footer class="footer">
+            <div class="footer-container">
+
+        <!-- Logo e slogan -->
+                <div class="footer-brand">
+                <h2>LOMA <span>BEAUTY</span></h2>
+                <p>Sua beleza natural, elevada</p>
+                <img src="src/imagens/Gemini_Generated_Image_ax7w3uax7w3uax7w-removebg-preview.png" alt="logo loma beauty">
+                </div>
+
+        <!-- Links úteis -->
+                <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li>
+                        <a href="#">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#">Política de privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#">Termos de uso</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+                </div>
+
+            <!-- Redes sociais -->
+            <div class="footer-insta">
+            <h3>Nos siga</h3>
+            <div class="icone-instagram">
+                <a href="#https://www.instagram.com/lomabeauty_?igsh=NWxoZzR5czY3MjVr&utm_source=qr"><i class="fab fa-instagram"></i></a>
+            </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 LOMA BEAUTY - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
