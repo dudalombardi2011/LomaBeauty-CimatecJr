@@ -9,7 +9,7 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #feebeb;
     display: flex;
     flex-direction: column;
@@ -367,16 +367,19 @@ main{
 }
 
 dialog{
+    position: fixed;
+    z-index: 2000;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: none;
-    width: 350px;
+    width: 90%;
+    max-width: 350px;
+    max-height: 80vh; /* evita que o modal estoure a tela */
     padding: 10px;
     border-radius: 5px;
     background-color: #f5d9e4;
-    position: relative;
-
+    overflow: auto; /* se o conteúdo for maior, aparece scroll interno */
 }
 
 dialog h3{
@@ -400,6 +403,7 @@ dialog p{
 
 dialog::backdrop{
     background-color: rgba(0,0,0,0.5);
+    position: fixed;
 }
 
 .modal-header{

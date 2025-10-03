@@ -60,7 +60,8 @@ openButtons.forEach(button => {
         const modalId = button.getAttribute('data-modal');
         const modal = document.getElementById(modalId);
  
-        modal.showModal();;
+        modal.showModal();
+        document.body.style.overflow="hidden"; //supostamente trava o scroll
     })
 })
 
@@ -70,5 +71,6 @@ closeButtons.forEach(button => {
         const modalId = button.getAttribute('data-modal');
         const modal = document.getElementById(modalId);
         modal.close();
+        document.body.style.overflow="";
     })
 })
