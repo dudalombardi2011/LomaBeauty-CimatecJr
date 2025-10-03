@@ -5,7 +5,7 @@
 
 ## 💗 Loma Beauty
 
-A ideia da Landing Page da Loma Beauty é ser um espaço digital elegante e simples para apresentar a marca de cosméticos. A navegação é bem intuitiva, dividida em seções de Início, Produtos e os Futuros Lançamentos. Na seção de Produtos, são exibidos itens de beleza com destaque visual, organizados em cards. E na seção de Futuros Lançamentos você vai encontrar um carrossel indicando as novidades da marca
+A ideia da Landing Page da Loma Beauty é ser um espaço digital elegante e simples para apresentar a marca de cosméticos. A navegação é bem intuitiva, dividida em seções de Início, Produtos e os Lançamentos. Na seção de Produtos, são exibidos itens de beleza com destaque visual, organizados em cards. E na seção de Futuros Lançamentos você vai encontrar um carrossel indicando as novidades da marca. Por fim, ao clicar em "Início" o usuário é direcionado a tela inicial da página.
 
 ## ⚜️ Como Clonar
 Clone este repositório no seu computador
