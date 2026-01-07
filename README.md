@@ -1,6 +1,6 @@
 # LomaBeauty-CimatecJr
 <div align="center">
-  <img src="./src/imagens/Gemini_Generated_Image_ax7w3uax7w3uax7w-removebg-preview.png" alt="logo da loma beauty" width="200px"/>
+  <img src="./assets/Gemini_Generated_Image_ax7w3uax7w3uax7w-removebg-preview.png" alt="logo da loma beauty" width="200px"/>
 </div>
 
 ## 💗 Loma Beauty
