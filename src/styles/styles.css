@@ -145,15 +145,15 @@ main{
 }
 
 .bg-image1{
-    background-image: url("../imagens/Gemini_Generated_Image_mq1slcmq1slcmq1s.png");
+    background-image: url("../../assets/Gemini_Generated_Image_mq1slcmq1slcmq1s.png");
 }
 
 .bg-image2{
-    background-image: url("../imagens/bg2.png") ;
+    background-image: url("../../assets/bg2.png") ;
 }
 
 .bg-image3{
-    background-image: url("../imagens/bg3.png");
+    background-image: url("../../assets/bg3.png");
 }
 
 .mobile-menu{
