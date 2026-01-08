@@ -1,0 +1,87 @@
+dialog{
+    position: fixed;
+    z-index: 2000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    width: 90%;
+    max-width: 350px;
+    max-height: 80vh; /* evita que o modal estoure a tela */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5d9e4;
+    overflow: auto; /* se o conteúdo for maior, aparece scroll interno */
+}
+
+dialog h3{
+   font-family: 'Poppins', sans-serif;
+}
+
+dialog p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 7px;
+    font-weight: 600;
+}
+
+.open-modal{
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 6px 6px;
+    cursor: pointer;
+    border: none;
+}
+
+dialog::backdrop{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+}
+
+.modal-header{
+    margin-bottom: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.modal-header img{
+    width: 150px;
+}
+
+.modal-conteudo{
+    padding: 15px;
+}
+
+.close-modal{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #5d0242;
+    font-size: 18px;
+}
+
+.carrinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;    
+    padding: 8px 10px;
+    color: white;
+    background-color: #d53361; 
+    border: none;
+    border-radius: 25px;
+    font-weight: 300;
+    font-size: 0.625rem;
+    /*rem acompanha a unidade de medida do navegador*/
+    cursor: pointer;
+    transition: background-color .2s ease;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    max-width: 150px;
+}
+
+.carrinho img{
+    background-color: transparent;
+    width: 20%;
+}
