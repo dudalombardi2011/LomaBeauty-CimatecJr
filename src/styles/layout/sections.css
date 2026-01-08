@@ -1,0 +1,82 @@
+.quadrados{
+    display: flex;
+    /*deixa um do lado do outro*/
+}
+
+.quadrado{
+    flex:1;
+    /*fez com que as caixas ocupassem o mesmo espaço na tela*/
+    display: flex; 
+    /*o flex deixa eles em linha*/
+    flex-direction: column;
+    /*aqui estamos deixando em colunas*/
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-family: "Kodchasan", sans-serif;
+    color: white;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+
+}
+
+.claro{
+    background-color: #ffa3c8;
+}
+
+.escuro{
+    background-color: #d53361;
+}
+
+.quadrado p{
+    padding: 20px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-family: "Kodchasan", sans-serif;
+    color: #60113A;
+    text-align: center;
+}
+
+.lançamento{
+    font-family: "Kodchasan", sans-serif;
+}
+
+.galeria-produtos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px;
+    padding: 20px;
+    max-width: 1200px; /* Limita a largura máxima da galeria no desktop */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.produto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.produto-card img {
+    /* Garante que a imagem se ajuste dentro do card */
+    width: 100%; 
+    height: auto;
+    max-width: 250px; /* Limite máximo para a imagem */
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+
+.produto-card h4{
+    font-family:"Montserrat", sans-serif;
+    font-size: 75%;
+}
+
+.flex{
+    display: flex;
+}

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan&display=swap');
+
+header{
+    padding: 0;
+    /*assim minha imagem consegue ocupar tudo*/
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*o z-indexx evita que o conteúdo do site “sobreponha” a navbar quando você rola a página*/
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+
+#nav-desktop{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap:48px;
+    flex: 1;
+    background-color: #d53361;
+}
+
+.nav-item a, .nav-mobile{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.nav-item a::after{
+   content: "";
+   position: absolute;
+   left: 50%;
+   width: 0%;
+   bottom: 0;
+   height: 3px;
+   background-color: #0088ff;
+   transition: width 0.3s ease, left 0.3s ease; 
+}
+
+.nav-item a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.conteudo-header{
+    text-align: center;
+    color: white;
+    padding-top: 30%;
+    padding-bottom: 100px;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 0.5rem;
+    display: flex;  /*vai centralizar o botao direitinho*/
+    flex-direction: column;  /*vai centralizar o botao direitinho*/
+    align-items: center;  /*vai centralizar o botao direitinho*/
+
+}
+
+.conteudo-header p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.conteudo-header h1{
+    font-size: 3rem;
+    margin-top: 2%;
+    font-family: "Kodchasan", sans-serif;
+}
+
+.pagina-principal{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: background-image 1s ease-in-out;
+}
+
+.bg-image1{
+    background-image: url("../../../assets/Gemini_Generated_Image_mq1slcmq1slcmq1s.png");
+}
+
+.bg-image2{
+    background-image: url("../../../assets/bg2.png") ;
+}
+
+.bg-image3{
+    background-image: url("../../../assets/bg3.png");
+}
+
+.mobile-menu{
+    /*nao aparece desktop*/
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.nav-mobile{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+    width: 100%;
+    list-style: none;
+}
+
+.nav-mobile li{
+    border-bottom: 1px solid #ffa3c8;
+    padding-bottom: 1.2rem;
+
+}
+
+.logo-mobile{
+    display: none;
+    /*bloqueando a logo no desktop*/
+    width: 40px;
+    height: auto;
+}
+
+.hamburguer{
+    margin-left: auto;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #A74A8B;
+    cursor: pointer;
+    display: none;
+}
+
+/*x do menu close*/
+.close{
+    display: none;
+    align-self: flex-end;
+    margin: 0 1rem 1rem 0;
+    font-size: 24px;
+    background: none;
+    color: white;
+    cursor: pointer;
+
+}
